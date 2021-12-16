@@ -1,12 +1,11 @@
 package BOJ.stage03_for문;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class _04_15552 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int T = Integer.parseInt(br.readLine());
         String[] arr;
@@ -20,10 +19,14 @@ public class _04_15552 {
             A = Integer.parseInt(arr[0]);
             B = Integer.parseInt(arr[1]);
 
-            System.out.println(A + B);
+            bw.write(A + B + "\n");
         }
+
+        br.close();
+        bw.flush();
+        bw.close();
     }
 }
 
-// 메모리 :  KB
-// 시간 :  ms
+// 메모리 : 297848 KB
+// 시간 : 968 ms
