@@ -9,15 +9,14 @@ public class _04_15552 {
 
         int T = Integer.parseInt(br.readLine());
         String[] arr;
-        int A, B;
 
         for (int i = 0 ; i < T ; i++) {
             String num = br.readLine();
 
             arr = num.split(" ");
 
-            A = Integer.parseInt(arr[0]);
-            B = Integer.parseInt(arr[1]);
+            int A = Integer.parseInt(arr[0]);
+            int B = Integer.parseInt(arr[1]);
 
             bw.write(A + B + "\n");
         }
