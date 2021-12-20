@@ -8,12 +8,17 @@ public class _07_11021 {
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int T = Integer.parseInt(bufferedReader.readLine());
+        int index = 0;
 
         for (int i = 1 ; i <= T ; i++) {
-            int A = Integer.parseInt(bufferedReader.readLine());
-            int B = Integer.parseInt(bufferedReader.readLine());
+            String num = bufferedReader.readLine();
+            String[] arr = num.split(" ");
+            int result = Integer.parseInt(arr[index]) + Integer.parseInt(arr[++index]);
 
-            bufferedWriter.write("Case #" + i + ": " + (A + B) + "\n");
+
+            bufferedWriter.write("Case #" + i + ": " + result + "\n");
+
+            index = 0;
         }
 
         bufferedReader.close();
@@ -22,5 +27,5 @@ public class _07_11021 {
     }
 }
 
-// 메모리 :  KB
-// 시간 :  ms
+// 메모리 : 11660 KB
+// 시간 : 76 ms
