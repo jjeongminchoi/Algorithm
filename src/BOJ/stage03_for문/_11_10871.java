@@ -8,19 +8,24 @@ import java.util.StringTokenizer;
 public class _11_10871 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder stringBuilder = new StringBuilder();
-        StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
+        StringBuilder result = new StringBuilder();
+        StringTokenizer st = new StringTokenizer(bufferedReader.readLine());
 
-        int index = Integer.parseInt(stringTokenizer.nextToken());
-        int N = Integer.parseInt(stringTokenizer.nextToken());
+        int A = Integer.parseInt(st.nextToken());
+        int N = Integer.parseInt(st.nextToken());
 
-        int[] A = new int[index];
+        StringTokenizer st2 = new StringTokenizer(bufferedReader.readLine());
 
-        for (int i = 0 ; i < A.length ; i++) {
-
+        for (int i = 0 ; i < A ; i++) {
+            int num = Integer.parseInt(st2.nextToken());
+            if (N > num) {
+                result.append(num).append(" ");
+            }
         }
+        bufferedReader.close();
+        System.out.println(result);
     }
 }
 
-// 메모리 : 14204 KB
-// 시간 : 128 ms
+// 메모리 : 15284 KB
+// 시간 : 164 ms
