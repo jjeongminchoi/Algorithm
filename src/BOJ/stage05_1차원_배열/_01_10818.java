@@ -8,20 +8,37 @@ import java.util.StringTokenizer;
 public class _01_10818 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer input = new StringTokenizer(br.readLine());
         StringBuilder sb = new StringBuilder();
 
         int N = Integer.parseInt(br.readLine());
         int[] arr = new int[N]; // 배열 크기 선언
+        int max; // 최댓값
+        int min; // 최솟값
 
+        StringTokenizer input = new StringTokenizer(br.readLine());
         // 배열 초기화
         for (int i = 0 ; i < arr.length ; i++) {
             arr[i] = Integer.parseInt(input.nextToken());
         }
 
-        System.out.println(arr);
+        max = arr[0];
+        min = arr[0];
+
+        // 최댓값 & 최솟값 구하기
+        for (int i = 1 ; i < arr.length ; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+            if (min > arr[i]) {
+                min = arr[i];
+            }
+        }
+        sb.append(min).append(" ").append(max);
+        System.out.println(sb);
+
+        br.close();
     }
 }
 
-// 메모리 :  KB
-// 시간 :  ms
+// 메모리 : 91580 KB
+// 시간 : 484 ms
