@@ -7,6 +7,7 @@ public class _02_4673 {
 //        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         Constructor c = new Constructor();
+
         int n = 1;
         int constructorNum = c.constructor(n);
 
