@@ -10,7 +10,7 @@ public class _06_1152 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer word = new StringTokenizer(br.readLine().trim(), " ");
         System.out.println(word.countTokens());
-        br.close();
+        br.close(); 
     }
 }
 
