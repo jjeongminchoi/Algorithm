@@ -18,7 +18,7 @@ public class _07_2908 {
 
         if (resA > resB) {
             System.out.println(resA);
-        } else {
+        } else { 
             System.out.println(resB);
         }
     }
