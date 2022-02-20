@@ -5,5 +5,6 @@ public class testMacM1 {
         System.out.println("Hello World Mac M1");
         System.out.println("test");
         System.out.println("test2");
+        System.out.println("test3");
     }
 }
