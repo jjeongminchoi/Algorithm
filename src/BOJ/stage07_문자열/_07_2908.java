@@ -16,7 +16,7 @@ public class _07_2908 {
         int resA = Integer.parseInt(numA.reverse().toString());
         int resB = Integer.parseInt(numB.reverse().toString());
 
-        if (resA > resB) {
+        if(resA > resB) {
             System.out.println(resA);
         } else { 
             System.out.println(resB);
